@@ -1,9 +1,9 @@
 
 
+//Equation:  12th root of 2 is c.a. 1.059463094, Pn is the desired frequency, Pa is the reference frequency, n-a is the note distance between the desired frequency
+// and the reference frequency. Pn = Pa*pow(1.059463094, n-a)
 
-//0
-
-//Equation:  12th root of 2 is c.a. 1.059463094, Pn = Pa*pow(1.059463094, n-a)
+// Sharp notes are written as "Nn", 
 
 #define A_0 440*pow(1.059463094, (1-49))
 #define Aa_0 440*pow(1.059463094, (2-49))
