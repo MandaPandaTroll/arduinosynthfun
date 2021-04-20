@@ -1,4 +1,4 @@
-int bpm = 60;
+float bpm = 60;
 
 #define whole 1/(bpm/60)*1000
 #define half whole/2
