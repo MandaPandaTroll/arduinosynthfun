@@ -1,0 +1,89 @@
+// This program generates a list of all notes that are supported by midi. C-1(0) to G9(127). Sharp notes are written as "Nn".
+
+
+
+
+
+
+public class notelistGen{
+
+    public static void main(String args[]){
+		
+		int octave = 0;
+		int noteNr= 0;
+		
+		for (octave =  0  ; octave <= 10 ; octave ++ ){
+			
+			System.out.println( "C_" + (octave - 1) + " = " + noteNr + " Binary: " + Integer.toBinaryString(noteNr));
+			
+			noteNr = noteNr + 1;
+			
+			
+
+			System.out.println( "Cc_" + (octave - 1) + " = " + noteNr + " Binary: " + Integer.toBinaryString(noteNr));
+			
+			noteNr = noteNr + 1;
+			
+						System.out.println( "D_" + (octave - 1) + " = " + noteNr + " Binary: " + Integer.toBinaryString(noteNr));
+			
+			noteNr = noteNr + 1;
+
+
+			System.out.println( "Dd_" + (octave - 1) + " = " + noteNr + " Binary: " + Integer.toBinaryString(noteNr));
+			
+			noteNr = noteNr + 1;
+
+
+			System.out.println( "E_" + (octave - 1) + " = " + noteNr + " Binary: " + Integer.toBinaryString(noteNr));
+			
+			noteNr = noteNr + 1;
+
+						System.out.println( "F_" + (octave - 1) + " = " + noteNr + " Binary " + Integer.toBinaryString(noteNr));
+			
+			noteNr = noteNr + 1;
+			
+			
+						System.out.println( "Ff_" + (octave - 1) + " = " + noteNr + " Binary: " + Integer.toBinaryString(noteNr));
+			
+			noteNr = noteNr + 1;
+			
+			
+						System.out.println( "G_" + (octave - 1) + " = " + noteNr + " Binary: " + Integer.toBinaryString(noteNr));
+			
+			noteNr = noteNr + 1;
+			
+			
+			
+			if (noteNr >= 127){
+				
+				return;
+			}
+			
+						System.out.println( "Gg_" + (octave - 1) + " = " + noteNr + " Binary: " + Integer.toBinaryString(noteNr));
+			
+			
+			
+			noteNr = noteNr + 1;
+			
+			
+						System.out.println( "A_" + (octave - 1) + " = " + noteNr + " Binary: " + Integer.toBinaryString(noteNr));
+			
+			noteNr = noteNr + 1;
+			
+			
+						System.out.println( "Aa_" + (octave - 1) + " = " + noteNr + " Binary: " + Integer.toBinaryString(noteNr));
+			
+			noteNr = noteNr + 1;
+			
+			
+						System.out.println( "B_" + (octave - 1)+ " = " + noteNr + " Binary: " + Integer.toBinaryString(noteNr));
+			
+			noteNr = noteNr + 1;
+			
+		}
+		
+    }
+	
+}
+
+
