@@ -2,15 +2,21 @@
 
 
 import java.lang.Math;
+import java.util.Scanner;
 
 public class Bpm{
 
     public static void main(String args[]){
 
 
-double bpm = 60;
+Scanner numb = new Scanner(System.in);
+System.out.println("enter bpm");
 
-double whole = (Math.pow((bpm/60), -1)*1000)*4;
+
+double bpm = numb.nextDouble();
+double bps = bpm/60;
+
+double whole = (Math.pow((bps), -1)*1000)*4;
 
 
 System.out.println("at " + bpm + " bpm, a whole note is " +  whole + "ms");
