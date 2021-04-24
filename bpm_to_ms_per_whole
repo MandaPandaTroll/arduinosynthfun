@@ -1,0 +1,21 @@
+// bpm to ms/whole note
+
+
+import java.lang.Math;
+
+public class Bpm{
+
+    public static void main(String args[]){
+
+
+double bpm = 60;
+
+double whole = (Math.pow((bpm/60), -1)*1000)*4;
+
+
+System.out.println("at " + bpm + " bpm, a whole note is " +  whole + "ms");
+        
+    }
+}
+
+
