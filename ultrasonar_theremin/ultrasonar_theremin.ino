@@ -8,6 +8,9 @@
 #define ECHOPIN 3        // Pin to receive echo pulse
 #define TRIGPIN 2        // Pin to send trigger pulse
 #include "pitches.h"
+
+//declarations of pitches for switch case below
+
  
 void setup()
 {
@@ -29,18 +32,27 @@ void loop()
   // Distance Calculation
 
  
-  float distance = pulseIn(ECHOPIN, HIGH);
-  distance= distance/58; 
+  
+
 
 /* The speed of sound is 340 m/s or 29 us per cm.The Ultrasonic burst travels out & back.So to find the distance of object we divide by 58  */
 
-  Serial.print(distance);
-  Serial.println(" cm");
-  
+float distance = pulseIn(ECHOPIN, HIGH);
 
- 
-  
-    if (distance < 5){
+setTone(distance);
+
+
+delay (100); // Can be adjusted to taste, but needs to be >= 50 ms.
+
+    
+}
+
+void setTone(distance){
+
+   
+    distance= distance/58; 
+
+      if (distance < 5){
       tone(10, bI);
     }
     if (distance < 10 && distance > 5){
@@ -98,17 +110,10 @@ if (distance < 65 && distance > 60){
     if (distance < 75 && distance > 70){
       tone(10, dI);
     }
-
-
-
-
-if (distance > 75){  // Tells the arduino to stay at the most recent note played. You can also put either noTone() (to make it go silent without input) or tone(10, the note of your choosing), here.
+    if (distance > 75){  // Tells the arduino to stay at the most recent note played. You can also put either noTone() (to make it go silent without input) or tone(10, the note of your choosing), here.
   delay (10);
 }
 
-delay (100); // Can be adjusted to taste, but needs to be >= 50 ms.
-
-    
 }
 
 
