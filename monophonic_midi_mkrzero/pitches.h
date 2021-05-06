@@ -1,0 +1,176 @@
+//Equation:  12th root of 2 is c.a. 1.059463094, Pn is the desired frequency, Pa is the reference frequency, n-a is the note distance between the desired frequency
+// and the reference frequency. Pn = Pa*pow(1.059463094, n-a)
+
+// Reference frequency: Pa = 440 Hz
+//Reference note: A4, which is 69 semitones from C-1
+// thus: a = 69
+
+// Sharp notes are written as "Nn", 
+
+
+//-2
+
+#define C_02 440*pow(1.059463094, -81)
+#define Cc_02 440*pow(1.059463094, -80)
+#define D_02 440*pow(1.059463094, -79)
+#define Dd_02 440*pow(1.059463094, -78)
+#define E_02 440*pow(1.059463094, -77)
+#define F_02 440*pow(1.059463094, -76)
+#define Ff_02 440*pow(1.059463094, -75)
+#define G_02 440*pow(1.059463094, -74)
+#define Gg_02 440*pow(1.059463094, -73)
+#define A_02 440*pow(1.059463094, -72)
+#define Aa_02 440*pow(1.059463094, -71)
+#define B_02 440*pow(1.059463094, -70)
+
+
+//-1
+
+#define C_01 440*pow(1.059463094, -69)
+#define Cc_01 440*pow(1.059463094, -68)
+#define D_01 440*pow(1.059463094, -67)
+#define Dd_01 440*pow(1.059463094, -66)
+#define E_01 440*pow(1.059463094, -65)
+#define F_01 440*pow(1.059463094, -64)
+#define Ff_01 440*pow(1.059463094, -63)
+#define G_01 440*pow(1.059463094, -62)
+#define Gg_01 440*pow(1.059463094, -61)
+#define A_01 440*pow(1.059463094, -60)
+#define Aa_01 440*pow(1.059463094, -59)
+#define B_01 440*pow(1.059463094, -58)
+
+
+//0
+
+
+#define C_0 440*pow(1.059463094, -57)
+#define Cc_0 440*pow(1.059463094, -56)
+#define D_0 440*pow(1.059463094, -55)
+#define Dd_0 440*pow(1.059463094, -54)
+#define E_0 440*pow(1.059463094, -53)
+#define F_0 440*pow(1.059463094, -52)
+#define Ff_0 440*pow(1.059463094, -51)
+#define G_0 440*pow(1.059463094, -50)
+#define Gg_0 440*pow(1.059463094, -49)
+#define A_0 440*pow(1.059463094, -48)
+#define Aa_0 440*pow(1.059463094, -47)
+#define B_0 440*pow(1.059463094, -46)
+
+
+//1
+
+#define C_1 440*pow(1.059463094, -45)
+#define Cc_1 440*pow(1.059463094, -44)
+#define D_1 440*pow(1.059463094, -43)
+#define Dd_1 440*pow(1.059463094, -42)
+#define E_1 440*pow(1.059463094, -41)
+#define F_1 440*pow(1.059463094, -40)
+#define Ff_1 440*pow(1.059463094, -39)
+#define G_1 440*pow(1.059463094, -38)
+#define Gg_1 440*pow(1.059463094, -37)
+#define A_1 440*pow(1.059463094, -36)
+#define Aa_1 440*pow(1.059463094, -35)
+#define B_1 440*pow(1.059463094, -34)
+
+//2
+
+#define C_2 440*pow(1.059463094, -33)
+#define Cc_2 440*pow(1.059463094, -32)
+#define D_2 440*pow(1.059463094, -31)
+#define Dd_2 440*pow(1.059463094, -30)
+#define E_2 440*pow(1.059463094, -29)
+#define F_2 440*pow(1.059463094, -28)
+#define Ff_2 440*pow(1.059463094, -27)
+#define G_2 440*pow(1.059463094, -26)
+#define Gg_2 440*pow(1.059463094, -25)
+#define A_2 440*pow(1.059463094, -24)
+#define Aa_2 440*pow(1.059463094, -23)
+#define B_2 440*pow(1.059463094, -22)
+
+//3
+
+#define C_3 440*pow(1.059463094, -21)
+#define Cc_3 440*pow(1.059463094, -20)
+#define D_3 440*pow(1.059463094, -19)
+#define Dd_3 440*pow(1.059463094, -18)
+#define E_3 440*pow(1.059463094, -17)
+#define F_3 440*pow(1.059463094, -16)
+#define Ff_3 440*pow(1.059463094, -15)
+#define G_3 440*pow(1.059463094, -14)
+#define Gg_3 440*pow(1.059463094, -13)
+#define A_3 440*pow(1.059463094, -12)
+#define Aa_3 440*pow(1.059463094, -11)
+#define B_3 440*pow(1.059463094, -10)
+
+//4
+
+#define C_4 440*pow(1.059463094, -9)
+#define Cc_4 440*pow(1.059463094, -8)
+#define D_4 440*pow(1.059463094, -7)
+#define Dd_4 440*pow(1.059463094, -6)
+#define E_4 440*pow(1.059463094, -5)
+#define F_4 440*pow(1.059463094, -4)
+#define Ff_4 440*pow(1.059463094, -3)
+#define G_4 440*pow(1.059463094, -2)
+#define Gg_4 440*pow(1.059463094, -1)
+#define A_4 440*pow(1.059463094, 0)
+#define Aa_4 440*pow(1.059463094, 1)
+#define B_4 440*pow(1.059463094, 2)
+
+//5
+
+#define C_5 440*pow(1.059463094, 3)
+#define Cc_5 440*pow(1.059463094, 4)
+#define D_5 440*pow(1.059463094, 5)
+#define Dd_5 440*pow(1.059463094, 6)
+#define E_5 440*pow(1.059463094, 7)
+#define F_5 440*pow(1.059463094, 8)
+#define Ff_5 440*pow(1.059463094, 9)
+#define G_5 440*pow(1.059463094, 10)
+#define Gg_5 440*pow(1.059463094, 11)
+#define A_5 440*pow(1.059463094, 12)
+#define Aa_5 440*pow(1.059463094, 13)
+#define B_5 440*pow(1.059463094, 14)
+
+//6
+
+#define C_6 440*pow(1.059463094, 15)
+#define Cc_6 440*pow(1.059463094, 16)
+#define D_6 440*pow(1.059463094, 17)
+#define Dd_6 440*pow(1.059463094, 18)
+#define E_6 440*pow(1.059463094, 19)
+#define F_6 440*pow(1.059463094, 20)
+#define Ff_6 440*pow(1.059463094, 21)
+#define G_6 440*pow(1.059463094, 22)
+#define Gg_6 440*pow(1.059463094, 23)
+#define A_6 440*pow(1.059463094, 24)
+#define Aa_6 440*pow(1.059463094, 25)
+#define B_6 440*pow(1.059463094, 26)
+
+//7
+
+
+#define C_7 440*pow(1.059463094, 27)
+#define Cc_7 440*pow(1.059463094, 28)
+#define D_7 440*pow(1.059463094, 29)
+#define Dd_7 440*pow(1.059463094, 30)
+#define E_7 440*pow(1.059463094, 31)
+#define F_7 440*pow(1.059463094, 32)
+#define Ff_7 440*pow(1.059463094, 33)
+#define G_7 440*pow(1.059463094, 34)
+#define Gg_7 440*pow(1.059463094, 35)
+#define A_7 440*pow(1.059463094, 36)
+#define Aa_7 440*pow(1.059463094, 37)
+#define B_7 440*pow(1.059463094, 38)
+
+
+//8
+
+#define C_8 440*pow(1.059463094, 39)
+#define Cc_8 440*pow(1.059463094, 40)
+#define D_8 440*pow(1.059463094, 41)
+#define Dd_8 440*pow(1.059463094, 42)
+#define E_8 440*pow(1.059463094, 43)
+#define F_8 440*pow(1.059463094, 44)
+#define Ff_8 440*pow(1.059463094, 45)
+#define G_8 440*pow(1.059463094, 46)
